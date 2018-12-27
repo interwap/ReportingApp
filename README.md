@@ -159,7 +159,7 @@ action_taken | No | Immediate Action Taken | String
 communication | No | Communication | String
 other | No | Other | String
 fir | No | Formal Investigation Required | int
-attachments | No | Attachments - Comma separated base64 images | String
+attachments | No | Attachments - Comma separated base64 images. Image compression may be required. Large images must be compressed to sizes that can be transmitted with the slowest of internet connection without loosing quality. | String
 
 ###### Response
 ```
@@ -172,5 +172,27 @@ attachments | No | Attachments - Comma separated base64 images | String
 }
 ```
 
-###### Developer Notes
+## Errors
+```
+{
+    "success": false,
+    "title": "Request Failed.",
+    "messages": ["Oops! Something went wrong"]
+}
+```
+
+##### Developer Notes
+
+**Types of settings**
+1. General – Version & Support
+2. Facility – Facilities
+3. Area - Areas
+4. Severity – Report Severity
+5. Incident – Incident Types
+6. Report – Report Types
+7. Rules - Golden Rules
+All settings are classified by type, meta_key and meta_value. For the most part, meta_key is mostly numeric.
+
+
+
 
