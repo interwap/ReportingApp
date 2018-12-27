@@ -136,7 +136,7 @@ URL | /report
 Method | POST
 
 ###### Parameters
------------- | -------------
+------------ | ------------- | -------------
 Parameter | Required | Description
 id | No | Id for the locally saved report 
 
