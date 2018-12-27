@@ -128,14 +128,17 @@ Request | /settings?access_token=CPrKJK1k51b
 }
 ```
 
-## Articles
+## Report
 
 ------------ | -------------
-Description | All articles on the CharleyApp Backend Service are linked to a parent category. This let's you fetch the articles and url to their accompanying media files.
-URL | /articles
-Method | GET
-Parameters | access_token & category
-Request | /articles?access_token=CPrKJK1k51b&category=5vr3JwXVZXY
+Description | Send report to the ReportingAPI Backend Service.
+URL | /report
+Method | POST
+
+###### Parameters
+------------ | -------------
+Parameter | Required | Description
+id | No | Id for the locally saved report 
 
 ###### Response
 ```
@@ -175,87 +178,3 @@ Request | /articles?access_token=CPrKJK1k51b&category=5vr3JwXVZXY
 }
 ```
 
-## Password
-
------------- | -------------
-Description | Changing password to CharleyApp account.
-URL | /password
-Method | POST
-Parameters | access_token & password
-Hint | password parameter is the new password (string)
-
-###### Response
-```
-{
-    "success": true,
-    "title": "Request Successful.",
-    "message": "Password Saved.",
-    "last_seen": "2018-12-24 22:43:12"
-}
-```
-
-## Expert
-
------------- | -------------
-Description | Request expert on the CharleyApp Backend Service.
-URL | /expert
-Method | POST
-Parameters | access_token & article
-Hint | article parameter is the official article id (string) - e.g bGlpg0DgwDz
-
-###### Response
-```
-{
-    "success": true,
-    "title": "Request Successful.",
-    "message": "Password Saved.",
-    "last_seen": "2018-12-24 22:43:12"
-}
-```
-
-## Beacon
-
------------- | -------------
-Description | Send a beacon to the CharleyApp Backend Service. This should be sent in the background whenever and article is opened/created in the activity lifecycle. CharleyApp uses this ping for analytical purposes and app usage tracking.
-URL | /beacon
-Method | POST
-Parameters | access_token & article
-Hint | article parameter is the official article id (string) - e.g bGlpg0DgwDz
-
-###### Response
-```
-{
-    "success": true,
-    "title": "Request Successful.",
-    "message": "Beacon Successfully.",
-    "last_seen": "2018-12-24 22:52:25"
-}
-```
-
-## Feedback
-
------------- | -------------
-Description | Send user feedbacks to the CharleyApp Backend Service.
-URL | /feedback
-Method | POST
-Parameters | access_token, name_of_station, name_of_dealer, equipment, description, date_of_anomaly, feedback_on_repairs
-Hint | Date Format: d-m-y, all other parameters are of string datatype.
-
-###### Response
-```
-{
-    "success": true,
-    "title": "Request Successful.",
-    "message": "Feedback Sent.",
-    "last_seen": "2018-12-24 22:59:58"
-}
-```
-
-## Media
-All attachments and media files can be accessed via the host url: [troubleshooting.charleyapp.com/](http://troubleshooting.charleyapp.com/)
-
-Accepted media files and are formats are listed below:
-
------------- | -------------
-Images | JPG, PNG
-Video | MP4
