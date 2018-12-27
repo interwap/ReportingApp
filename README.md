@@ -20,24 +20,19 @@ The app and User IDs are both encoded in the token itself (among other things), 
 ------------ | -------------
 Description | Authenticating user handles user accounts, groups, permissions and cookie-based user sessions
 URL | /authenticate
-Method | POST
-Parameters | email & password
+Method | GET
+Parameters | id & password
 
 ###### Response
 ```
 {
     "success": true,
     "title": "Request Successful.",
-    "message": "Authentication OK.",
-    "access_token": "CPrKJK1k51b",
-    "email": "user@email.com",
-    "mobile": "1234567890",
-    "firstname": "Jane",
-    "lastname": "Doe",
-    "last_seen": "2018-12-12 21:48:52",
-    "meta": {
-        "title": "Customer Support"
-    }
+    "access_token": "lgwx8nwrvKD",
+    "username": "johndoe",
+    "staff_id": "JD23S4",
+    "email": "johndoe@charleyapp.com",
+    "last_seen": "2018-12-26 19:54:26"
 }
 ```
 
