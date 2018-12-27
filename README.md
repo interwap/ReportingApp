@@ -191,6 +191,7 @@ attachments | No | Attachments - Comma separated base64 images. Image compressio
 5. Incident – Incident Types
 6. Report – Report Types
 7. Rules - Golden Rules
+
 All settings are classified by type, meta_key and meta_value. For the most part, meta_key is mostly numeric.
 
 
