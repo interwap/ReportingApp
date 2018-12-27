@@ -39,51 +39,92 @@ Parameters | id & password
 ###### How to Get an Access Token
 If user is authorized and login is successful, the API will respond with an access token.
 
-## Categories
+## Settings
 
 ------------ | -------------
-Description | All articles on the CharleyApp Backend Service are grouped into categories. This lets your app fetch all categories a user group has permission to.
-URL | /categories
+Description | All global settings/options required for reporting
+URL | /settings
 Method | GET
 Parameters | access_token
-Request | /categories?access_token=CPrKJK1k51b
+Request | /settings?access_token=CPrKJK1k51b
 
 ###### Response
 ```
 {
     "success": true,
     "title": "Request Successful.",
-    "message": "Categories OK.",
-    "categories": [
+    "settings": [
         {
-            "id": "j6K8JXLJzR5",
-            "name": "Solar System Installation",
-            "alias": "solar-system-installation",
-            "author": "4mDGJ9RVLjn",
-            "parent": "5vr3JwXVZXY",
-            "attachment": "attachments/4-compressor.jpg",
-            "created": "2018-12-11 08:54:54"
+            "id": "1",
+            "type": "report",
+            "meta_key": "1",
+            "meta_value": "Near Miss",
+            "created": "2018-03-25 08:45:36"
         },
         {
-            "id": "5LXng2ZgyY7",
-            "name": "Usage of Solar System",
-            "alias": "usage-of-solar-system",
-            "author": "4mDGJ9RVLjn",
-            "parent": "5vr3JwXVZXY",
-            "attachment": "attachments/solar-compressor.png",
-            "created": "2018-12-11 08:57:01"
+            "id": "2",
+            "type": "report",
+            "meta_key": "2",
+            "meta_value": "Unsafe Act",
+            "created": "2018-03-25 08:47:13"
         },
         {
-            "id": "q4L0VB7krD5",
-            "name": "Maintenance of Solar System - Preventive or Planned",
-            "alias": "maintenance-of-solar-system-preventive-or-planned",
-            "author": "4mDGJ9RVLjn",
-            "parent": "5vr3JwXVZXY",
-            "attachment": "attachments/6-compressor.jpg",
-            "created": "2018-12-11 09:00:46"
-        }
-    ],
-    "last_seen": "2018-12-12 21:51:49"
+            "id": "3",
+            "type": "report",
+            "meta_key": "3",
+            "meta_value": "Unsafe Conditions",
+            "created": "2018-03-25 08:47:45"
+        },
+        {
+            "id": "4",
+            "type": "report",
+            "meta_key": "4",
+            "meta_value": "Stop Card",
+            "created": "2018-03-25 08:48:23"
+        },
+        {
+            "id": "5",
+            "type": "report",
+            "meta_key": "5",
+            "meta_value": "Incident",
+            "created": "2018-03-25 08:49:22"
+        },
+        {
+            "id": "6",
+            "type": "incident",
+            "meta_key": "1",
+            "meta_value": "Physical Injuries",
+            "created": "2018-03-25 09:33:47"
+        },
+        {
+            "id": "7",
+            "type": "incident",
+            "meta_key": "2",
+            "meta_value": "Pollution",
+            "created": "2018-03-25 09:34:12"
+        },
+        {
+            "id": "8",
+            "type": "incident",
+            "meta_key": "3",
+            "meta_value": "Material Or Production Related Damages",
+            "created": "2018-03-25 09:35:20"
+        },
+        {
+            "id": "9",
+            "type": "incident",
+            "meta_key": "4",
+            "meta_value": "Impact On Public Opinion",
+            "created": "2018-03-25 09:36:35"
+        },
+        {
+            "id": "10",
+            "type": "severity",
+            "meta_key": "1",
+            "meta_value": "Minor",
+            "created": "2018-03-25 09:44:09"
+        } ...
+    ]
 }
 ```
 
