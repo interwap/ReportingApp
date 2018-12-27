@@ -145,43 +145,32 @@ type | Yes | Report Type | int
 name_of_facility | No | Name Of Facility | String
 type_of_facility | No | Type Of Facility | String
 area | No | Area | String
-
+cd | No | Circumstance Date | DateTime
+md | No | Modified Date | DateTime
+nature_of_incident | No | Nature Of Incident | int
+sl | No | Severity Level | int
+stop_card | No | Stop Card ID| String
+sia | No | Stop Card Issued Against | String
+sur | No | Stop Card User Role | int
+violation | No | Violation | String
+consequences | No | Consequences | String
+incident_status | No | Incident Status | int
+action_taken | No | Immediate Action Taken | String
+communication | No | Communication | String
+other | No | Other | String
+fir | No | Formal Investigation Required | int
+attachments | No | Attachments - Comma separated base64 images | String
 
 ###### Response
 ```
 {
     "success": true,
     "title": "Request Successful.",
-    "message": "Articles OK.",
-    "articles": [
-        {
-            "id": "jGlpg0DgwDz",
-            "title": "Which  safety precautions must be taken when performing maintenance on the system",
-            "alias": "which-safety-precautions-must-be-taken-when-performing-maintenance-on-the-system",
-            "category": "q4L0VB7krD5",
-            "attachment": [
-                "attachments/safety-precause.jpg"
-            ],
-            "precautions": "<p>&nbsp;</p>\r\n<p><strong><em>Always remember to disconnect the PV array</em></strong></p>\r\n<p>&nbsp;</p>\r\n<p><strong><em> from charge controller when checking the system</em></strong></p>",
-            "details": [
-                "Servicing, Operation and Maintenance logbook must be checked",
-                "Personal protective equipment must be worn when needed ",
-                "Check digital multimeter with clip-on ammeter ",
-                "Check for differential Residual Current Device (RCD) ",
-                "Check wire brush",
-                "Check Acid neutralising agent ",
-                "Check clean cloths ",
-                "Check contact grease ",
-                "Check clear and clean water without detergent ",
-                "Check non-abrasive sponges ",
-                "Have a bucket",
-                "Check toolbox "
-            ],
-            "created": "2018-12-11 10:23:51",
-            "updated": "2018-12-20 16:45:50"
-        }
-    ],
-    "last_seen": "2018-12-12 23:08:54"
+    "id": "10",
+    "messages": "Request Successful",
+    "reported": "2018-12-27 04:54:56"
 }
 ```
+
+###### Developer Notes
 
