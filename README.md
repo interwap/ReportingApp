@@ -137,9 +137,15 @@ Method | POST
 
 ###### Parameters
 
------------- | ------------- | -------------
-Parameter | Required | Description
-id | No | Local report ID
+------------ | ------------- | ------------- | -------------
+Parameter | Required | Description | Type
+id | No | Local report ID | int
+access_token | Yes | Access Token | String
+type | Yes | Report Type | int
+name_of_facility | No | Name Of Facility | String
+type_of_facility | No | Type Of Facility | String
+area | No | Area | String
+
 
 ###### Response
 ```
